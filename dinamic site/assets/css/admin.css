@@ -1,0 +1,240 @@
+*{
+  font-family: 'Comfortaa', cursive;
+}
+html,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+  color: #605f5f;
+}
+body{
+  background: #f6f6f6;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+}
+/*
+  HEADER
+*/
+header{
+  background: #008484;
+  height: 70px;
+}
+header *{
+  color: #ffff;
+}
+header h1{
+  margin-top: 13px;
+}
+header h1 a{
+  color: #ffff;
+  text-decoration: none;
+}
+header h1 :hover{
+  color: #ffff;
+}
+header ul{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  float: right;
+}
+header ul li{
+  float: left;
+  position: relative;
+}
+header ul li a{
+  display: block;
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: #ffff;
+  padding: 20px;
+}
+header ul li a:hover{
+ background: #006669;
+ transition: 0.4s;
+ color: #ffff;
+}
+header ul li ul{
+  position: absolute;
+  top: 70px;
+  right: 0px;
+  width: 180px;
+  display: none;
+  z-index: 88888;
+}
+header ul li:hover ul{
+  display: block;
+}
+header ul li ul li{
+  width: 100%;
+}
+header ul li ul li a{
+  padding: 15px;
+  background: white;
+  color: #008489;
+}
+/*
+ Footer
+ */
+ .footer{
+  background: #303036;
+  color: #d3d3d3;
+  position: relative;
+ }
+ .footer .footer-section{
+  padding: 22px;
+ }
+ .footer h4, .footer h3{
+  color: white;
+ }
+ .footer .about .contact span{
+  display: block;
+  font-size: 1.1em;
+  margin-bottom: 8px;
+ }
+ .footer .about .socials a{
+  border: 1px solid gray;
+  width: 45px;
+  height: 41px;
+  padding-top: 5px;
+  margin-right: 5px;
+  text-align: center;
+  display: inline-block;
+  font-size: 1.3em;
+  border-radius: 5px;
+  transition: all .3s;
+  color: #fff;
+ }
+ .footer .about .socials a:hover{
+  border: 1px solid white;
+  color: white;
+  transition: all .3s;
+ }
+ .footer .links ul a{
+  display: block;
+  margin-bottom: 10px;
+  font-size: 1.2em;
+  transition: all .3s;
+  color: #fff;
+  text-decoration: none;
+ }
+ .footer .links ul a:hover{
+  color: white;
+  margin-left: 15px;
+  transition: all .3s;
+ }
+ .footer .contact-form .contact-input{
+  background: #272727;
+  color: #bebebd;
+  margin-bottom: 10px;
+  border: none;
+  width: 100%;
+  height: 50px;
+ }
+ .footer .contact-form .contact-input:focus{
+  background: #1a1a1a;
+ }
+ .footer .contact-form .contact-btn{
+  float: right;
+  font-size: 1.1em;
+  color: #ffff;
+  background: #1a1a1a;
+ }
+ .footer .contact-form .contact-btn:hover{
+  color: #1a1a1a;
+  background: white;
+  transition: .5s;
+ }
+ .footer .footer-bottom{
+  background: #343a40;
+  color: #686868;
+  height: 40px;
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  padding-top: 10px;
+ }
+ /*
+ FORMS
+*/
+form div.err p{
+  color: red;
+  font-style: italic;
+  font-size: 0.8rem;
+}
+/*
+SIDEBAR
+*/
+.sidebar{
+  background: #006669;
+  margin: 1rem 0;
+  min-height: 600px;
+}
+.sidebar ul{
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  color: #d3d3d3;
+}
+.sidebar ul a{
+  padding: 18px;
+  display: block;
+  border-bottom: 1px solid #fff;
+}
+.sidebar ul a:hover{
+  padding-left: 10px;
+  transition: all 0.3s;
+  color: #d3d3d3;
+  text-decoration: none;
+}
+.posts{
+  height: 100%;
+  padding: 40px 100px 100px;
+}
+.posts h2{
+  text-align: center;
+  margin: 2rem 0 0 0.5rem;
+}
+.posts .title-table div{
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #d3d3d3;
+  font-weight: 600;
+}
+.posts .post div{
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #d3d3d3;
+}
+.posts .post .edit{
+  color: #008484;
+}
+.posts .post a:hover{
+  color: black;
+}
+.posts .post .delete{
+  color: red;
+}
+.posts .post .id{
+  font-weight: bold;
+}
+/*
+ error msg
+ */
+ .add-post .err{
+  padding: 1rem 0;
+  color: red;
+ }
+ .add-post .err ul{
+  list-style-type: none;
+  color: red;
+  padding-left: 10px;
+  font-weight: 5000;
+ }
